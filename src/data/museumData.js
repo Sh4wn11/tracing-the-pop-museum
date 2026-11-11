@@ -21,7 +21,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Malls became the ultimate family hangout, live concert venue, and escape from tropical heat.',
         placeholderLabel: 'PHOTO: CROWDED 2000s SM / AYALA MALL ATRIUM CONCERT',
-        src: '',
+        src: '/images/space/ayala.jpg',
       },
       {
         id: 'space-ukay',
@@ -30,7 +30,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Born from 1980s relief goods and 1990s "wag-wag," ukay-ukay turned rummaging through secondhand clothes into a nationwide treasure hunt.',
         placeholderLabel: 'PHOTO: HANDS RUMMAGING THROUGH UKAY-UKAY RACKS',
-        src: '',
+        src: '/images/space/ukay-ukay.jpg',
       },
       {
         id: 'space-lanshop',
@@ -39,7 +39,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Cheap hourly rentals turned dim internet cafes into loud arenas for Ragnarok Online and DOTA.',
         placeholderLabel: 'PHOTO: TEENS PLAYING RAGNAROK & DOTA ON CRT MONITORS',
-        src: '',
+        src: '/images/space/comshop.png',
       },
       {
         id: 'space-bpo',
@@ -48,7 +48,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Expanding Makati and Ortigas call centers paired with 7-Eleven and MiniStop kept urban districts awake all night.',
         placeholderLabel: 'PHOTO: MAKATI BPO BUILDINGS & 24/7 MINISTOP / 7-ELEVEN',
-        src: '',
+        src: '/images/space/ministop.jpg',
       },
       {
         id: 'space-forums',
@@ -57,7 +57,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Before algorithmic feeds, virtual forums gave Filipino hobbyists their first online communities.',
         placeholderLabel: 'SCREENSHOT: PINOYEXCHANGE (PEx) & SYMBIANIZE FORUMS',
-        src: '',
+        src: '/images/space/pex.jpg',
       },
     ],
 
@@ -69,12 +69,12 @@ export const EXHIBITS_DATA = [
         pastText:
           'Youth gathered physically in mall arcades and neighborhood LAN shops to play and bond.',
         pastImageLabel: '2000s: CROWDED NEIGHBORHOOD COMPUTER SHOP',
-        pastSrc: '',
+        pastSrc: '/images/space/comshop1.jpg',
         presentTitle: 'PRESENT: Online & Mixed Spaces',
         presentText:
           'Hangouts shifted to Discord servers, gaming lounges, and aesthetic cafes, while malls expanded into full lifestyle hubs.',
         presentImageLabel: 'PRESENT: DISCORD VOICE CHAT & AESTHETIC CAFE',
-        presentSrc: '',
+        presentSrc: '/images/space/cafe.jpg',
       },
       {
         dimension: 'RETAIL & SUSTAINABILITY',
@@ -82,12 +82,12 @@ export const EXHIBITS_DATA = [
         pastText:
           'Ukay-ukay served as an informal, budget-driven survival strategy for affordable fashion (Biana, 2020).',
         pastImageLabel: '2000s: OPEN-AIR UKAY-UKAY STALLS',
-        pastSrc: '',
+        pastSrc: '/images/space/ukay2.jpg',
         presentTitle: 'PRESENT: Eco-Awareness vs. Parcel Waste',
         presentText:
           'Thrifting is celebrated as sustainable fashion (Biana, 2020), yet clashes with massive plastic waste from e-commerce deliveries.',
         presentImageLabel: 'PRESENT: CURATED THRIFT DROP VS. E-COMMERCE PARCELS',
-        presentSrc: '',
+        presentSrc: '/images/space/olukay.jpg',
       },
       {
         dimension: 'PUBLIC DISCOURSE',
@@ -95,12 +95,12 @@ export const EXHIBITS_DATA = [
         pastText:
           'Public discussion lived on desktop forum threads like PinoyExchange and Symbianize.',
         pastImageLabel: '2000s: DESKTOP FORUM THREAD BOARD',
-        pastSrc: '',
+        pastSrc: '/images/space/pex2.jpg',
         presentTitle: 'PRESENT: Algorithmic Public Squares',
         presentText:
           'Debates moved to mobile comment sections on Facebook, X, and TikTok, accelerating political polarization (Deinla et al., 2022).',
         presentImageLabel: 'PRESENT: MOBILE SOCIAL MEDIA COMMENT FEEDS',
-        presentSrc: '',
+        presentSrc: '/images/space/x.jpg',
       },
     ],
 
@@ -112,7 +112,7 @@ export const EXHIBITS_DATA = [
         caption:
           'As tropical heatwaves intensify, mega-malls are retrofitted into climate-resilient cooling shelters with vertical forests and solar micro-grids (OECD, 2026).',
         placeholderLabel: 'RENDER: GREEN BIOPHILIC SM MALL COOLING SHELTER (2030)',
-        src: '',
+        src: '/images/space/bio.jpg',
       },
       {
         code: '2030 // ECON-SPACE',
@@ -120,7 +120,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Hybrid work decentralizes growth away from congested Metro Manila into regional smart hubs like Clark, Cebu, and CALABARZON (NEDA, 2016/2023).',
         placeholderLabel: 'RENDER: REGIONAL SMART TOWNSHIP & PHYGITAL HUB (2030)',
-        src: '',
+        src: '/images/space/phygital.jpg',
       },
       {
         code: '2030 // TRADE-SPACE',
@@ -128,7 +128,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Zero-waste logistics and green trade rules institutionalize ukay-ukay upcycling into mainstream retail (Biana, 2020; ITC, 2025).',
         placeholderLabel: 'CONCEPT: ZERO-WASTE DIGITAL UKAY-UKAY RETAIL HUB',
-        src: '',
+        src: '/images/space/pack.jpg',
       },
     ],
   },
@@ -155,7 +155,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Families bonded nightly over Pangako Sa \'Yo (2000) love teams and the pan-Asian Meteor Garden (2003) fever.',
         placeholderLabel: 'POSTER: PANGAKO SA \'YO (2000) & METEOR GARDEN (2003)',
-        src: '',
+        src: '/images/affect/meteor.jpg',
       },
       {
         id: 'affect-opm',
@@ -164,7 +164,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Youth jammed to MYMP, Nina, and Kamikazee, and mourned together over the Eraserheads disbandment (2002) and Francis M\'s passing (2009).',
         placeholderLabel: 'ALBUM ART: 2000s OPM ROCK & ACOUSTIC POP CDS',
-        src: '',
+        src: '/images/affect/eraser.jpg',
       },
       {
         id: 'affect-horror',
@@ -173,7 +173,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Chito Roño\'s Feng Shui reshaped national superstitions and turned theater screaming into a group bonding ritual.',
         placeholderLabel: 'MOVIE STILL: FENG SHUI (2004) BAGUA MIRROR SCENE',
-        src: '',
+        src: '/images/affect/feng.jpg',
       },
       {
         id: 'affect-toys',
@@ -182,7 +182,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Simple cardboard Teks, Pogs, and spinning Beyblades built fierce street-corner community hype among kids.',
         placeholderLabel: 'FLAT-LAY PHOTO: TEKS, POGS, JOLENS & BEYBLADE',
-        src: '',
+        src: '/images/affect/jolen.jpg',
       },
       {
         id: 'affect-sms',
@@ -191,7 +191,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Blind typing on Nokia keypads spread instant romance and opinions, while the 2008 food and fuel price crisis sparked household anxiety.',
         placeholderLabel: 'PHOTO: NOKIA 3310 UNLI-TEXT & 2008 RICE QUEUE CLIPPING',
-        src: '',
+        src: '/images/affect/unli.jpg',
       },
     ],
 
@@ -276,7 +276,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Tied directly to unlimited texting ("eOw p0whz"), Jejemon blended baggy hip-hop clothes and rainbow caps into fearless street identity.',
         placeholderLabel: 'PORTRAIT: 2000s JEJEMON OUTFIT & RAINBOW JEJECAP',
-        src: '',
+        src: '/images/body/jejemon.jpg',
       },
       {
         id: 'body-emo',
@@ -285,7 +285,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Spread via MTV, Multiply selfies, and MP3 players, Emo fashion used black eyeliner and side-swept bangs to express raw youth angst.',
         placeholderLabel: 'PHOTO: HIGH-ANGLE MULTIPLY EMO SELFIE & MP3 EARPHONES',
-        src: '',
+        src: '/images/body/myspace.jpg',
       },
       {
         id: 'body-whitening',
@@ -294,7 +294,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Booming papaya soap billboards and Asianovelas popularized fair-skinned Chinita, Chinito, and Mestiza beauty standards.',
         placeholderLabel: 'AD ARCHIVE: 2000s SKIN-WHITENING BILLBOARD & SOAP ADS',
-        src: '',
+        src: '/images/body/white.jpg',
       },
       {
         id: 'body-metrosexual',
@@ -303,7 +303,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Led by icons like Piolo Pascual and Richard Gutierrez, male skincare and sharp fashion normalized modern Filipino metrosexuality.',
         placeholderLabel: 'MAGAZINE COVER: 2000s METROSEXUAL MENSWEAR & GROOMING',
-        src: '',
+        src: '/images/body/piolo1.jpg',
       },
       {
         id: 'body-cosplay-bpo',
@@ -312,7 +312,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Youth transformed into anime heroes at ToyCon (2002) by weekend and wore corporate headsets on graveyard BPO shifts by night.',
         placeholderLabel: 'SPLIT PHOTO: TOYCON COSPLAYER & BPO CALL CENTER AGENT',
-        src: '',
+        src: '/images/body/cosplay.jpg',
       },
     ],
 

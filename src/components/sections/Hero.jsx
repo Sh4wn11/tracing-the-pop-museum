@@ -15,6 +15,7 @@ export default function Hero() {
       <div className="mt-4">
         <ImagePlaceholder
           label="HERO VISUAL COLLAGE: NOKIA 3310 • SM MALL ATRIUM • RAGNAROK LAN SHOP • FRIENDSTER • PANGAKO SA 'YO"
+          src="/images/hero/sm.png"
           aspectRatio="aspect-[16/7] sm:aspect-[21/8]"
           className="w-full"
         />
@@ -40,10 +41,10 @@ export default function Hero() {
 
           {/* Mini 4-Card Sticker/Artifact Row (White Placeholders) */}
           <div className="mt-6 grid grid-cols-4 gap-2.5">
-            <ImagePlaceholder label="JEJECAP" aspectRatio="aspect-square" />
-            <ImagePlaceholder label="BEYBLADE" aspectRatio="aspect-square" />
-            <ImagePlaceholder label="NOKIA 3310" aspectRatio="aspect-square" />
-            <ImagePlaceholder label="MP3 PLAYER" aspectRatio="aspect-square" />
+            <ImagePlaceholder label="JEJECAP" src="/images/hero/jejecap.png" aspectRatio="aspect-square" />
+            <ImagePlaceholder label="BEYBLADE" src="/images/hero/beyblade.png" aspectRatio="aspect-square" />
+            <ImagePlaceholder label="NOKIA 3310" src="/images/hero/3310.png" aspectRatio="aspect-square" />
+            <ImagePlaceholder label="MP3 PLAYER" src="/images/hero/mp3-player.jpg" aspectRatio="aspect-square" />
           </div>
         </div>
 
