@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Anton", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+
+  --color-canvas: #0c0c0b;
+  --color-surface: #141413;
+  --color-bone: #f2ece1;
+  --color-amber-retro: #f3b877;
+  --color-muted: #9ca3af;
+  --color-hairline: #262624;
+  --color-signal-red: #e13a29;
+  --color-signal-green: #a3e635;
+}
+
+/* Subtle dark grid background from the UI reference */
+.bg-industrial-grid {
+  background-color: var(--color-canvas);
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Dot-matrix text texture effect for the main hero title */
+.text-dot-matrix {
+  background-image: radial-gradient(
+    circle,
+    #f2ece1 45%,
+    #f3b877 65%,
+    transparent 70%
+  );
+  background-size: 6px 6px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
