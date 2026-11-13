@@ -147,6 +147,7 @@ export default function ExitLounge() {
                   <div key={slotIdx} className="space-y-1">
                     <ImagePlaceholder
                       label={itemObj ? itemObj.name : 'EMPTY SLOT'}
+                      src={itemObj ? itemObj.src : ''}
                       aspectRatio="aspect-square"
                     />
                   </div>

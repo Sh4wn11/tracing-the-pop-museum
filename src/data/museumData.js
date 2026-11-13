@@ -203,12 +203,12 @@ export const EXHIBITS_DATA = [
         pastText:
           'Collective feelings happened at the exact same hour around one family television set and shared radio hits.',
         pastImageLabel: '2000s: FAMILY WATCHING PRIMETIME TV ON CRT SCREEN',
-        pastSrc: '',
+        pastSrc: '/images/affect/tv.png',
         presentTitle: 'PRESENT: Viral Memes & Reaction Streams',
         presentText:
           'Emotions are shared on-demand through TikTok live reactions, Stan X threads, and global streaming platforms.',
         presentImageLabel: 'PRESENT: SMARTPHONE MEME & LIVE REACTION STREAM',
-        presentSrc: '',
+        presentSrc: '/images/affect/tw.jpg',
       },
       {
         dimension: 'PUBLIC & YOUTH ANXIETY',
@@ -216,12 +216,12 @@ export const EXHIBITS_DATA = [
         pastText:
           'Emotional stress centered on stretching family budgets during the 2008 global financial and rice crisis.',
         pastImageLabel: '2000s: 2008 FUEL & RICE PRICE HIKE HEADLINES',
-        pastSrc: '',
+        pastSrc: '/images/affect/rc.png',
         presentTitle: 'PRESENT: Eco-Anxiety & Algorithmic Outrage',
         presentText:
           'Filipino youth experience intense climate anxiety (Aruta & Simon, 2022) alongside polarized social media echo chambers (Deinla et al., 2022).',
         presentImageLabel: 'PRESENT: YOUTH CLIMATE STRIKE & POLARIZED FEEDS',
-        presentSrc: '',
+        presentSrc: '/images/affect/protest.png',
       },
     ],
 
@@ -233,7 +233,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Digital burnout and AI-generated noise push youth toward phone-free "offline clubs" and high-trust neighborhood circles.',
         placeholderLabel: 'CONCEPT: PHONE-FREE OFFLINE ACOUSTIC CLUB (2030)',
-        src: '',
+        src: '/images/affect/out.png',
       },
       {
         code: '2030 // CLIMATE-AFFECT',
@@ -241,7 +241,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Eco-anxiety transforms into institutional climate resilience, mental health integration, and community disaster readiness (Aruta & Simon, 2022; OECD, 2026).',
         placeholderLabel: 'CONCEPT: COMMUNITY CLIMATE RESILIENCE & CARE HUB',
-        src: '',
+        src: '/images/affect/care.png',
       },
       {
         code: '2030 // ECON-AFFECT',
@@ -249,7 +249,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Workers balance AI job-displacement stress with multi-stream creative hustles pursuing a secure AmBisyon Natin 2040 life (Cazzaniga et al., 2025; NEDA, 2016/2023).',
         placeholderLabel: 'CONCEPT: AI WORKFLOW CO-PILOT & MAGINHAWA LIVING',
-        src: '',
+        src: '/images/affect/ai.jpg',
       },
     ],
   },
@@ -276,7 +276,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Tied directly to unlimited texting ("eOw p0whz"), Jejemon blended baggy hip-hop clothes and rainbow caps into fearless street identity.',
         placeholderLabel: 'PORTRAIT: 2000s JEJEMON OUTFIT & RAINBOW JEJECAP',
-        src: '/images/body/jejemon.jpg',
+        src: '/images/body/jeje.jpg',
       },
       {
         id: 'body-emo',
@@ -324,12 +324,12 @@ export const EXHIBITS_DATA = [
         pastText:
           'Appearance signaled distinct subcultures (Jejemon, Emo, Rakista) captured on low-res digital cameras for Friendster and Multiply.',
         pastImageLabel: '2000s: DIGI-CAM SUBCULTURE PHOTO ON FRIENDSTER',
-        pastSrc: '',
+        pastSrc: '/images/body/digi.png',
         presentTitle: 'PRESENT: Algorithmic Micro-Trends & Filters',
         presentText:
           'Body positivity mixes with curated Instagram aesthetics, AR beauty filters, and rapid TikTok Y2K fast-fashion cycles.',
         presentImageLabel: 'PRESENT: TIKTOK Y2K OUTFIT REEL & BEAUTY FILTER',
-        presentSrc: '',
+        presentSrc: '/images/body/y2k.png',
       },
       {
         dimension: 'THE WORKING & CIVIC BODY',
@@ -337,12 +337,12 @@ export const EXHIBITS_DATA = [
         pastText:
           'Filipino bodies were physically mobilized overseas as OFWs or adapted to indoor nocturnal schedules in BPO offices and LAN shops.',
         pastImageLabel: '2000s: ON-SITE CALL CENTER FLOOR & BALIKBAYAN BOX',
-        pastSrc: '',
+        pastSrc: '/images/body/bpo.png',
         presentTitle: 'PRESENT: Remote Screens & Digital Footprints',
         presentText:
           'Professional and political identity is shaped by remote digital work, online activism frames, and sedentary screen habits (Cazzaniga et al., 2025).',
         presentImageLabel: 'PRESENT: WORK-FROM-HOME DESK & DIGITAL PROFILE',
-        presentSrc: '',
+        presentSrc: '/images/body/wfh.png',
       },
     ],
 
@@ -354,7 +354,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Fast fashion loses status to slow-culture craftsmanship, pre-colonial Philippine motifs, and archival ukay-ukay upcycling (Biana, 2020).',
         placeholderLabel: 'LOOKBOOK: NEO-INDIGENOUS WEAVE & UPCYCLED DENIM (2030)',
-        src: '',
+        src: '/images/body/weave.png',
       },
       {
         code: '2030 // LABOR-BODY',
@@ -362,7 +362,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Filipino workers stay physically local while exporting high-skill creative and cognitive labor globally via AI-assisted workflows (Cazzaniga et al., 2025; PIDS, 2025).',
         placeholderLabel: 'PORTRAIT: FILIPINO AI ORCHESTRATOR IN REGIONAL STUDIO',
-        src: '',
+        src: '/images/body/techfuture.png',
       },
       {
         code: '2030 // BIO-BODY',
@@ -370,7 +370,7 @@ export const EXHIBITS_DATA = [
         caption:
           'Biometric verification protects self-image against political deepfakes (Deinla et al., 2022; PIDS, 2025), while daily routines adapt to extreme tropical heat (OECD, 2026).',
         placeholderLabel: 'CONCEPT: VERIFIED DIGITAL TWIN ID & HEAT-ADAPTIVE WEAR',
-        src: '',
+        src: '/images/body/id.png',
       },
     ],
   },
@@ -387,9 +387,9 @@ export const CORE_CONSTANTS_DATA = [
     summary:
       'Whether crowding inside an air-conditioned mall atrium in 2005 or hanging out in a Discord voice server today, Filipinos always turn commercial and digital spaces into tight-knit community tambayans.',
     pastLabel: '2000s: BARKADA IN SM MALL & LAN SHOP',
-    pastSrc: '',
+    pastSrc: '/images/space/comshop1.jpg',
     presentLabel: 'PRESENT: BARKADA ON DISCORD & CAFE',
-    presentSrc: '',
+    presentSrc: '/images/constants/shop.png',
   },
   {
     id: 'constant-emotion',
@@ -398,9 +398,9 @@ export const CORE_CONSTANTS_DATA = [
     summary:
       'Formats evolved from CRT teleseryes and MP3 players to TikTok streams, but our reliance on pop culture to feel romantic kilig, supernatural thrills, and OPM heartbreak never changed.',
     pastLabel: '2000s: CRYING OVER TELESERYE & OPM GIG',
-    pastSrc: '',
+    pastSrc: '/images/constants/heads.jpg',
     presentLabel: 'PRESENT: P-POP CONCERT & VIRAL REACTION',
-    presentSrc: '',
+    presentSrc: '/images/constants/sb19.png',
   },
   {
     id: 'constant-hybrid',
@@ -409,9 +409,9 @@ export const CORE_CONSTANTS_DATA = [
     summary:
       'Every generation blends global influences into local realities—from remixing hip-hop and MTV into Jejemon and Emo styles to upcycling ukay-ukay into sustainable street fashion.',
     pastLabel: '2000s: UKAY-UKAY & JEJEMON STREETWEAR',
-    pastSrc: '',
+    pastSrc: '/images/constants/jeje.png',
     presentLabel: 'PRESENT: UPCYCLED PINOY STREETWEAR',
-    presentSrc: '',
+    presentSrc: '/images/constants/street.png',
   },
 ];
 
@@ -419,14 +419,14 @@ export const CORE_CONSTANTS_DATA = [
 // CH 05: EXIT LOUNGE INTERACTIVE DATA
 // ==========================================
 export const STARTER_PACK_ITEMS = [
-  { id: 'nokia', name: 'NOKIA 3310 UNLI-TEXT', category: 'TECH' },
-  { id: 'ragnarok', name: 'RAGNAROK LAN SHOP', category: 'SPACE' },
-  { id: 'ukay', name: 'BAGUIO UKAY-UKAY DIG', category: 'SPACE' },
-  { id: 'pangako', name: 'PANGAKO SA \'YO KILIG', category: 'AFFECT' },
-  { id: 'opm', name: 'OPM ACOUSTIC & ROCK', category: 'AFFECT' },
-  { id: 'friendster', name: 'FRIENDSTER HTML PROFILE', category: 'TECH' },
-  { id: 'jejecap', name: 'RAINBOW JEJECAP', category: 'BODY' },
-  { id: 'beyblade', name: 'TEKS, POGS & BEYBLADE', category: 'PLAY' },
+  { id: 'nokia', name: 'NOKIA 3310 UNLI-TEXT', category: 'TECH', src: '/images/hero/3310.png' },
+  { id: 'ragnarok', name: 'RAGNAROK LAN SHOP', category: 'SPACE', src: '/images/lounge/ragnarok.jpg' },
+  { id: 'ukay', name: 'BAGUIO UKAY-UKAY DIG', category: 'SPACE', src: '/images/space/ukay2.jpg' },
+  { id: 'pangako', name: 'PANGAKO SA \'YO KILIG', category: 'AFFECT', src: '/images/lounge/pangako.png' },
+  { id: 'opm', name: 'OPM ACOUSTIC & ROCK', category: 'AFFECT', src: '/images/affect/eraser.jpg' },
+  { id: 'friendster', name: 'FRIENDSTER HTML PROFILE', category: 'TECH', src: '/images/lounge/friendster.jpg' },
+  { id: 'jejecap', name: 'RAINBOW JEJECAP', category: 'BODY', src: '/images/hero/jejecap.png' },
+  { id: 'beyblade', name: 'TEKS, POGS & BEYBLADE', category: 'PLAY', src: '/images/hero/beyblade.png' },
 ];
 
 export const INITIAL_TESTIMONIALS = [

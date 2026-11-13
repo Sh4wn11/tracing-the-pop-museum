@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="mt-4">
         <ImagePlaceholder
           label="HERO VISUAL COLLAGE: NOKIA 3310 • SM MALL ATRIUM • RAGNAROK LAN SHOP • FRIENDSTER • PANGAKO SA 'YO"
-          src="/images/hero/sm.png"
+          src="/images/hero/collage.jpg"
           aspectRatio="aspect-[16/7] sm:aspect-[21/8]"
           className="w-full"
         />
