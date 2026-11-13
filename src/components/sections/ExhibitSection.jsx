@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SectionHeader from '../ui/SectionHeader';
 import ImagePlaceholder from '../ui/ImagePlaceholder';
 import { ArrowRight } from 'lucide-react';
@@ -13,6 +13,18 @@ const ERA_TABS = [
 export default function ExhibitSection({ exhibit }) {
   const [activeTab, setActiveTab] = useState('all');
 
+  // Ensure all sub-sections are visible when navigating via Navbar anchor links
+  useEffect(() => {
+    const handleHashNavigation = () => {
+      if (window.location.hash.startsWith(`#${exhibit.id}`)) {
+        setActiveTab('all');
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashNavigation);
+    return () => window.removeEventListener('hashchange', handleHashNavigation);
+  }, [exhibit.id]);
+
   const showDecade = activeTab === 'all' || activeTab === 'decade';
   const showCompare = activeTab === 'all' || activeTab === 'compare';
   const showFuture = activeTab === 'all' || activeTab === 'future';
@@ -20,7 +32,7 @@ export default function ExhibitSection({ exhibit }) {
   return (
     <section
       id={exhibit.id}
-      className="max-w-6xl mx-auto px-4 sm:px-8 pb-24 border-b border-hairline"
+      className="max-w-6xl mx-auto px-4 sm:px-8 pb-24 border-b border-hairline scroll-mt-24"
     >
       {/* 1. Industrial Chapter Header */}
       <SectionHeader
@@ -30,7 +42,7 @@ export default function ExhibitSection({ exhibit }) {
         accent="red"
       />
 
-      {/* 2. 2-Column Exhibit Intro (Matches UI Reference Layout) */}
+      {/* 2. 2-Column Exhibit Intro */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start pb-10 border-b border-hairline">
         <div className="md:col-span-6">
           <h2 className="font-display text-4xl sm:text-5xl lg:text-[52px] leading-[0.94] uppercase text-bone tracking-tight">
@@ -42,7 +54,6 @@ export default function ExhibitSection({ exhibit }) {
           <p className="font-sans text-sm sm:text-base text-bone/80 leading-relaxed">
             {exhibit.leadSummary}
           </p>
-          {/* Concept Tags */}
           <div className="flex flex-wrap gap-2 pt-1">
             {exhibit.relatedConcepts.map((concept) => (
               <span
@@ -82,10 +93,10 @@ export default function ExhibitSection({ exhibit }) {
       </div>
 
       {/* =========================================================
-          PART A: 2000–2010 VISUAL ARCHIVE GRID
+          PART A: 2000–2010 VISUAL ARCHIVE GRID (01 PAST)
       ========================================================= */}
       {showDecade && (
-        <div className="pt-10">
+        <div id={`${exhibit.id}-past`} className="pt-10 scroll-mt-28">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
               <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-signal-green font-bold">
@@ -100,10 +111,8 @@ export default function ExhibitSection({ exhibit }) {
             </span>
           </div>
 
-          {/* 5-Card Visual Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-6 gap-5">
             {exhibit.decadeGallery.map((item, idx) => {
-              // First 2 cards span 3 cols (half width), next 3 cards span 2 cols (third width)
               const colSpan = idx < 2 ? 'md:col-span-3' : 'md:col-span-2';
               return (
                 <article
@@ -117,7 +126,6 @@ export default function ExhibitSection({ exhibit }) {
                       </span>
                     </div>
 
-                    {/* Solid White Image Placeholder */}
                     <ImagePlaceholder
                       label={item.placeholderLabel}
                       src={item.src}
@@ -142,10 +150,10 @@ export default function ExhibitSection({ exhibit }) {
       )}
 
       {/* =========================================================
-          PART B: PAST TO PRESENT COMPARISON SECTION
+          PART B: PAST TO PRESENT COMPARISON SECTION (02 PAST TO PRESENT)
       ========================================================= */}
       {showCompare && (
-        <div className="pt-14">
+        <div id={`${exhibit.id}-compare`} className="pt-14 scroll-mt-28">
           <div className="flex items-center justify-between mb-6 pt-6 border-t border-hairline">
             <div className="flex items-center gap-3">
               <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-signal-red font-bold">
@@ -166,7 +174,6 @@ export default function ExhibitSection({ exhibit }) {
                 key={comp.dimension}
                 className="bg-surface/50 border border-hairline p-5"
               >
-                {/* Dimension Header Bar */}
                 <div className="flex items-center justify-between pb-3 mb-4 border-b border-hairline">
                   <span className="font-mono text-xs uppercase tracking-[0.2em] text-amber-retro font-bold">
                     DIMENSION // {comp.dimension}
@@ -176,9 +183,7 @@ export default function ExhibitSection({ exhibit }) {
                   </span>
                 </div>
 
-                {/* Side-by-Side Visual Comparison */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Left: 2000-2010 */}
                   <div className="space-y-3">
                     <ImagePlaceholder
                       label={comp.pastImageLabel}
@@ -198,7 +203,6 @@ export default function ExhibitSection({ exhibit }) {
                     </div>
                   </div>
 
-                  {/* Right: Present Day */}
                   <div className="space-y-3 md:border-l md:border-hairline md:pl-6">
                     <ImagePlaceholder
                       label={comp.presentImageLabel}
@@ -225,10 +229,10 @@ export default function ExhibitSection({ exhibit }) {
       )}
 
       {/* =========================================================
-          PART C: FUTURE SECTION (2030 SPECULATIVE HORIZON)
+          PART C: FUTURE SECTION (03 FUTURE)
       ========================================================= */}
       {showFuture && (
-        <div className="pt-14">
+        <div id={`${exhibit.id}-future`} className="pt-14 scroll-mt-28">
           <div className="flex items-center justify-between mb-6 pt-6 border-t border-hairline">
             <div className="flex items-center gap-3">
               <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-signal-green font-bold">
